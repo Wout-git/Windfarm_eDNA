@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Windfarm eDNA Appendage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,11 +29,29 @@
             font-style: italic;
             color: #777;
         }
+        .metadata-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .metadata-section h2 {
+            color: #333;
+        }
+        .metadata-section p {
+            color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <h1>Windfarm eDNA Appendage</h1>
     <p>Here are additional graphs that didn’t make it to the poster but still provide valuable insights into the species composition of the different samples.</p>
+
     <!-- Heatplot Section -->
     <div class="image-container">
         <h2>Heatplot</h2>
@@ -46,6 +64,15 @@
         <h2>Upsetplot</h2>
         <img src="https://wout-git.github.io/Windfarm_eDNA/upsetplot.png" alt="Upsetplot">
         <p class="caption">Description of the upsetplot. You can update this text to explain the plot in detail later.</p>
+    </div>
+
+    <!-- Metadata Section (PDF Embed) -->
+    <div class="metadata-section">
+        <h2>Metadata</h2>
+        <p>Below is the detailed metadata and full dataset from the Windfarm eDNA study:</p>
+
+        <!-- Embed PDF -->
+        <iframe src="https://wout-git.github.io/Windfarm_eDNA/Metadatawindfarm_DvB.pdf" title="Metadatawindfarm_DvB.pdf"></iframe>
     </div>
 </body>
 </html>
